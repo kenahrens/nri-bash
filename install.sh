@@ -29,12 +29,12 @@ cp ./ssl-cert-check/* ${CUSTOM_INTEGRATIONS}/ssl-cert-check
 echo "Extra ssl-cert-check files copied."
 
 # Make sure the executable can be executed
-chmod 755 ${CUSTOM_INTEGRATIONS}/bin/*.sh
-echo "Integration made into an executable."
+#chmod 755 ${CUSTOM_INTEGRATIONS}/bin/*.sh
+#echo "Integration made into an executable."
 
 # Make sure the ssl-cert-check can be executed
-chmod 755 ${CUSTOM_INTEGRATIONS}/ssl-cert-check/ssl-cert-check
-echo "Extra ssl-cert-check made into an executable."
+#chmod 755 ${CUSTOM_INTEGRATIONS}/ssl-cert-check/ssl-cert-check
+#echo "Extra ssl-cert-check made into an executable."
 
 # Restart the newrelic-infra agent
 service newrelic-infra restart
