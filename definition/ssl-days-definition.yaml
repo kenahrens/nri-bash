@@ -1,0 +1,11 @@
+name: com.adg.sslDays
+protocol_version: 1
+description: Read the number of days before expiration of a SSL certificate
+os: linux
+
+commands:
+  ssl-days:
+    command:
+      - ./bin/ssl-days.sh
+    interval: 30
+    prefix: integration/custom/sslDays

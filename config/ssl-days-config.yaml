@@ -1,0 +1,7 @@
+integration_name: com.adg.sslDays
+
+instances:
+  - name: testmac1
+    command: ssl-days
+    arguments:
+      cert: /Users/kahrens/.ssh/testmac1.crt

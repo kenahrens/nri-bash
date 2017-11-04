@@ -1,0 +1,12 @@
+{
+	"name":"com.adg.sslDays",
+	"protocol_version":"1",
+	"integration_version":"1.0.0",
+	"metrics": [
+		{
+			"event_type":"SSLCertExpire",
+			"provider.cert":"CERT",
+			"provider.days":DAYS
+		}
+	]
+}
