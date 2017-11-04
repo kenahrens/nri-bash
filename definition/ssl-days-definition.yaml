@@ -6,6 +6,6 @@ os: linux
 commands:
   ssl-days:
     command:
-      - bash ./bin/ssl-days.sh
+      - ./bin/ssl-days.sh
     interval: 30
     prefix: integration/custom/sslDays

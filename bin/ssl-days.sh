@@ -4,7 +4,7 @@
 # 1 certificate(s) will expire (FILE:/Users/kahrens/.ssh/testmac1.crt on Nov 24 2017)|days=21
  
 # Run the command and grab the value after the equal sign
-DAYS=`bash ./ssl-cert-check/ssl-cert-check -c ${CERT} -N | cut -d "=" -f2`
+DAYS=`./ssl-cert-check/ssl-cert-check -c ${CERT} -N | cut -d "=" -f2`
 
 # Read in the JSON
 JSON=`cat ./templates/ssl-days-template.json`
