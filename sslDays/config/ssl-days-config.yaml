@@ -1,7 +1,0 @@
-integration_name: com.adg.sslDays
-
-instances:
-  - name: test1
-    command: ssl-days
-    arguments:
-      cert: /home/kahrens/.ssh/test1.crt

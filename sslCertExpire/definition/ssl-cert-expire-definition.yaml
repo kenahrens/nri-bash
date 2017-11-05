@@ -1,0 +1,11 @@
+name: com.adg.sslCertExpire
+protocol_version: 1
+description: Record the number of days before expiration of a SSL certificate
+os: linux
+
+commands:
+  ssl-cert-expire:
+    command:
+      - ./bin/ssl-cert-expire.sh
+    interval: 30
+    prefix: integration/custom/sslCertExpire

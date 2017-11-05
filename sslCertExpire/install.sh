@@ -13,24 +13,24 @@ cp ./config/*.yaml $ETC_CONFIG
 echo "All config files copied."
 
 # Copy the configuration file to the custom-integrations directory
-cp ./definition/*.yaml $CUSTOM_INTEGRATIONS
-echo "All definition files copied."
+cp ./definition/ssl-days-definition.yaml $CUSTOM_INTEGRATIONS
+echo "ssl-days-definition YAML file copied."
 
 # Copy the template file to a template directory
-cp ./templates/*.json ${CUSTOM_INTEGRATIONS}/templates
-echo "All template files copied."
+cp ./templates/ssl-days-template.json ${CUSTOM_INTEGRATIONS}/templates
+echo "ssl-days-template JSON files copied."
 
 # Copy the shell script the bin directory
-cp ./bin/* ${CUSTOM_INTEGRATIONS}/bin
-echo "All binary files copied."
+cp ./bin/ssl-days.sh ${CUSTOM_INTEGRATIONS}/bin
+echo "ssl-days script copied."
 
-# Copy the ssl-cert-check
-cp ./ssl-cert-check/* ${CUSTOM_INTEGRATIONS}/ssl-cert-check
-echo "Extra ssl-cert-check files copied."
+# Copy the ssl-cert-check script
+cp ./ssl-cert-check/ssl-cert-check ${CUSTOM_INTEGRATIONS}/ssl-cert-check
+echo "Extra ssl-cert-check file copied."
 
 # Make sure the executable can be executed
-chmod 755 ${CUSTOM_INTEGRATIONS}/bin/*.sh
-echo "Integration made into an executable."
+chmod 755 ${CUSTOM_INTEGRATIONS}/bin/ssl-days.sh
+echo "ssl-days made into an executable."
 
 # Make sure the ssl-cert-check can be executed
 chmod 755 ${CUSTOM_INTEGRATIONS}/ssl-cert-check/ssl-cert-check
