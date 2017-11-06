@@ -1,0 +1,11 @@
+name: com.adg.ssl-cert-expire
+protocol_version: 1
+description: ssl-cert-expire on host integration example
+os: linux
+
+commands:
+  dir-metrics:
+    command:
+      - ./bin/ssl-cert-expire.sh
+    interval: 30
+    prefix: integration/custom/ssl-cert-expire

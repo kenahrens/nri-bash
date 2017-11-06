@@ -1,0 +1,11 @@
+name: com.adg.OHINAME
+protocol_version: 1
+description: OHINAME on host integration example
+os: linux
+
+commands:
+  dir-metrics:
+    command:
+      - ./bin/OHINAME.sh
+    interval: 30
+    prefix: integration/custom/OHINAME

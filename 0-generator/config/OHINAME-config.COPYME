@@ -1,0 +1,7 @@
+integration_name: com.adg.OHINAME
+
+instances:
+  - name: tmp_size
+    command: OHINAME
+    arguments:
+      dir_name: /tmp

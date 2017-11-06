@@ -1,0 +1,8 @@
+integration_name: com.adg.ssl-cert-expire
+
+instances:
+  - name: tmp_size
+    command: ssl-cert-expire
+    arguments:
+      CERT_LOCATION: /home/kahrens/.ssh/test1.crt
+      CERT_NAME: Basic Test 1

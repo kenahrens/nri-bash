@@ -1,6 +1,6 @@
 [submodule "ssl-cert-check"]
 	path = sslDays/ssl-cert-check
 	url = https://github.com/Matty9191/ssl-cert-check
-[submodule "sslCertExpire/ssl-cert-check"]
-	path = sslCertExpire/ssl-cert-check
+[submodule "ssl-cert-expire/ssl-cert-check"]
+	path = ssl-cert-expire/ssl-cert-check
 	url = https://github.com/Matty9191/ssl-cert-check
