@@ -1,7 +1,7 @@
 integration_name: com.adg.ssl-cert-expire
 
 instances:
-  - name: tmp_size
+  - name: Instance 1
     command: ssl-cert-expire
     arguments:
       CERT_LOCATION: /home/kahrens/.ssh/test1.crt

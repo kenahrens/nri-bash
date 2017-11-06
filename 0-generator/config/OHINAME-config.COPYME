@@ -1,7 +1,12 @@
 integration_name: com.adg.OHINAME
 
 instances:
-  - name: tmp_size
+  - name: Instance 1
     command: OHINAME
     arguments:
       dir_name: /tmp
+
+  - name: Instance 2
+    command: OHINAME
+    arguments:
+      dir_name: /
