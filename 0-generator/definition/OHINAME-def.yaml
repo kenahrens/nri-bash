@@ -4,7 +4,7 @@ description: OHINAME on host integration example
 os: linux
 
 commands:
-  dir-metrics:
+  OHINAME:
     command:
       - ./bin/OHINAME.sh
     interval: 30
