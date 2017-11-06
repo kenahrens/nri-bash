@@ -5,7 +5,7 @@ ETC_CONFIG=/etc/newrelic-infra/integrations.d
 
 # Create these directories if they don't exist
 mkdir ${CUSTOM_INTEGRATIONS}/bin
-mkdir ${CUSTOM_INTEGRATIONS}/templates
+mkdir ${CUSTOM_INTEGRATIONS}/template
 
 # Copy the config file to the integrations.d directory
 cp ./config/*.yaml $ETC_CONFIG

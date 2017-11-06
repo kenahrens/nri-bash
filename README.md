@@ -6,6 +6,12 @@ This project includes on-host integrations to use with New Relic Infrastructure.
 * SSL Cert Expire - Track the number of days before a SSL certificate expires
 * Uptime - Track the server uptime
 
+# Installing
+This project relies on subprojects, so you need to clone with `--recursive` like this:
+```
+$ git clone --recursive https://github.com/kenahrens/nri-bash.git
+```
+
 # Project Generator
 There is a generator which can be used to make a new integration. It will create a set of directories including a shell script, config example, definition file, JSON template, installer and readme. You can use it like this:
 ```
