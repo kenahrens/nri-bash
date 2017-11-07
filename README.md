@@ -2,9 +2,9 @@
 This project includes on-host integrations to use with New Relic Infrastructure. These should not require additional languages, although they may require that certain packages are installed.
 
 # Integrations Included
-* Dir Stats - File counts and size of files in a directory
-* SSL Cert Expire - Track the number of days before a SSL certificate expires
-* Uptime - Track the server uptime
+* [Dir Stats](./dir-stats) - File counts and size of files in a directory
+* [SSL Cert Expire](./ssl-cert-expire) - Track the number of days before a SSL certificate expires
+* [Uptime](./uptime) - Track the server uptime in seconds
 
 # Installing
 This project relies on subprojects, so you need to clone with `--recursive` like this:

@@ -1,0 +1,13 @@
+{
+	"name":"com.adg.dir-stats",
+	"protocol_version":"1",
+	"integration_version":"1.0.0",
+	"metrics": [
+		{
+			"event_type":"ComputeSample",
+			"dirName":"DIR_NAME",
+			"fileCount":FILE_COUNT,
+			"dirSize":DIR_SIZE
+		}
+	]
+}

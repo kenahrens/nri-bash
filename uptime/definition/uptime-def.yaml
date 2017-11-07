@@ -1,0 +1,11 @@
+name: com.adg.uptime
+protocol_version: 1
+description: uptime on host integration example
+os: linux
+
+commands:
+  uptime:
+    command:
+      - ./bin/uptime.sh
+    interval: 30
+    prefix: integration/custom/uptime

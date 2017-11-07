@@ -1,0 +1,5 @@
+integration_name: com.adg.uptime
+
+instances:
+  - name: Uptime
+    command: uptime

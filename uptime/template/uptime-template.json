@@ -1,0 +1,11 @@
+{
+	"name":"com.adg.uptime",
+	"protocol_version":"1",
+	"integration_version":"1.0.0",
+	"metrics": [
+		{
+			"event_type":"ComputeSample",
+			"uptime":UPTIME
+		}
+	]
+}
