@@ -48,4 +48,4 @@ When this is working you will see a new event type named `SSLCertExpire` show up
 ```
 SELECT average(expireDays) FROM SSLCertExpire FACET certName SINCE 60 MINUTES AGO TIMESERIES
 ```
-(insights.png)
+(insights.png "Insights UI")
