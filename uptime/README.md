@@ -1,14 +1,22 @@
-# uptime On Host Integration
-This on-host integration has several pieces that work together:
-* bin/uptime.sh - the binary script to be run
-* config/uptime-config.COPYME - this config must be copied and customized for the specific host
-* definition/uptime-def.yaml - this has the filename of the script and the frequency / interval
-* template/uptime-template.json - this is the structure of the data to send to New Relic
-* install.sh - this will copy all the files to the correct locations and restart the agent
+# Uptime On Host Integration
+This one is pretty simple. It reads the uptime from `/proc/uptime` and reports into the `ComputeSample` event type. Since there are no configuration options, it has a pre-built config file. All you have to do is run the installer (with sudo) and you're done.
 
-## Customizing
-At this point you can edit the files:
-* bin/uptime.sh - put your custom commands in here that you want to run
-* config/uptime-config.COPYME - copy this file to config/OHINAME-config.yaml and edit the values
-* definition/uptime-def.yaml - if you want to send in new inputs, edit this file
-* template/uptime-template.json - if you want to send out new values, edit this file
+## Installation
+Run the installer:
+```
+uptime$ sudo sh install.sh 
+mkdir: cannot create directory ‘/var/db/newrelic-infra/custom-integrations/bin’: File exists
+mkdir: cannot create directory ‘/var/db/newrelic-infra/custom-integrations/template’: File exists
+All config files copied.
+uptime-definition YAML file copied.
+uptime-template JSON files copied.
+uptime script copied.
+uptime made into an executable.
+Infrastructure service restarted
+```
+
+## Viewing Data
+You will see a new attribute in `ComputeSample` called uptime in Insights. Query used:
+```
+SELECT average(uptime) FROM ComputeSample SINCE 30 MINUTES AGO TIMESERIES
+```

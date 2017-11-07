@@ -5,8 +5,3 @@ instances:
     command: OHINAME
     arguments:
       dir_name: /tmp
-
-  - name: Instance 2
-    command: OHINAME
-    arguments:
-      dir_name: /

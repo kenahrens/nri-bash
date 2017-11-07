@@ -5,8 +5,3 @@ instances:
     command: dir-stats
     arguments:
       dir_name: /tmp
-
-  - name: Instance 2
-    command: dir-stats
-    arguments:
-      dir_name: /

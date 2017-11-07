@@ -1,13 +1,5 @@
 # SSL Cert Expire On Host Integration
-This on-host integration has several pieces that work together:
-* bin/ssl-cert-expire.sh - the binary script to be run
-* config/ssl-cert-expire-config.COPYME - this config must be copied and customized for the specific host
-* definition/ssl-cert-expire-def.yaml - this has the filename of the script and the frequency / interval
-* template/ssl-cert-expire-template.json - this is the structure of the data to send to New Relic
-* install.sh - this will copy all the files to the correct locations and restart the agent
-
-## Customizing
-This script expects you to supply 2 variables:
+This script expects you to supply 2 variables in your configuration:
 * CERT_LOCATION - the location of the certificate file
 * CERT_NAME - a name to use in the Insights UI
 
@@ -44,7 +36,7 @@ Infrastructure service restarted
 ```
 
 ## Viewing Data
-When this is working you will see a new event type named `SSLCertExpire` show up in Insights. Query used:
+You will see a new event type named `SSLCertExpire` show up in Insights. Query used:
 ```
 SELECT average(expireDays) FROM SSLCertExpire FACET certName SINCE 60 MINUTES AGO TIMESERIES
 ```
