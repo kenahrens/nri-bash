@@ -11,6 +11,7 @@ JSON=`cat ./template/OHINAME-template.json`
 # The @ in the sed command is a delimiter
 # s@FILE_COUNT@${FILE_COUNT} replaces FILE_COUNT from the template
 JSON=`printf "${JSON}" | sed -e "s@FILE_COUNT@${FILE_COUNT}@"`
+JSON=`echo ${JSON} | sed -e "s@DIR_NAME@${DIR_NAME}@"`
 
 # Remove all the whitespace from the JSON
 JSON=`printf "${JSON}" | tr -d [:space:]`
